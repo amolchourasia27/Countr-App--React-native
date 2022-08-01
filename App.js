@@ -33,7 +33,7 @@ const CounterScreen = () => {
             setCount(0);
           }}
           style={styles.button}>
-          <Text>Reset</Text>
+          <Text style={styles.buttonText}>Reset</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -54,6 +54,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     borderRadius: 30,
     margin: 80,
+  },
+  buttonText: {
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 15,
   },
 });
 export default CounterScreen;
